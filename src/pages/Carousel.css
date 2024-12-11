@@ -1,0 +1,81 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* ข้อความทางซ้าย */
+.carousel-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.carousel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    
+}
+
+.carousel-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.carousel-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ภาพ Carousel */
+.carousel-image {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.carousel-image:hover {
+    transform: scale(1.05);
+}
+
+/* ปรับให้ข้อความและภาพจัดเรียงในหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel-text,
+    .carousel-inner {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.carousel-image {
+    width: 100%; /* ให้ภาพเต็มความกว้างของ container */
+    height: 400px; /* กำหนดความสูงที่แน่นอน */
+    object-fit: cover; /* ปรับให้ภาพครอบคลุมพื้นที่โดยไม่บิดเบี้ยว */
+    border-radius: 15px; /* เพิ่มความโค้งมน */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* ใส่เงา */
+    transition: transform 0.4s ease;
+}
+
+.carousel-image:hover {
+    transform: scale(1.05); /* ขยายภาพเมื่อ hover */
+}
+
+
+

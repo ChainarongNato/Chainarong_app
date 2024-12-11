@@ -1,0 +1,47 @@
+/* กำหนดสไตล์พื้นหลัง */
+.navbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #4B2E14; /* สีน้ำตาลเข้ม */
+    padding: 10px 20px; /* เพิ่มพื้นที่รอบๆ */
+}
+
+/* โลโก้ */
+.logo-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+/* เมนู */
+.nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #714b31; /* เพิ่มเอฟเฟกต์เมื่อเมาส์ชี้ */
+    border-radius: 5px;
+}
+
+/* ลิงก์ "ลงชื่อเข้าใช้" */
+.login-link {
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px; /* ทำขอบมน */
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.login-link:hover {
+    color: #4B2E14 !important;
+    background-color: white;
+    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อเมาส์ชี้ */
+}
+
+/* เพิ่ม hover effect ให้โลโก้ */
+.logo-brand:hover {
+    text-decoration: underline;
+}

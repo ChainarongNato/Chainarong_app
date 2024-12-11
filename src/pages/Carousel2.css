@@ -1,0 +1,40 @@
+/* สไตล์สำหรับการจัดระยะห่างรอบ Carousel */
+.carousel-container {
+    margin: 20px auto; /* เพิ่มระยะห่างด้านบน/ล่างและตรงกลางหน้าจอ */
+    padding: 10px; /* เพิ่มระยะห่างภายใน */
+    max-width: 90%; /* จำกัดความกว้างไม่ให้เต็มจอ */
+    border-radius: 15px; /* มุมมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเพื่อความโดดเด่น */
+    background-color: #f8f9fa; /* เพิ่มพื้นหลังสีขาวอ่อน */
+}
+
+.custom-carousel-image {
+    height: 150px; /* ความสูงของภาพคงที่ */
+    width: 100%; /* ความกว้างเต็มพื้นที่ของ container */
+    object-fit: cover; /* ทำให้ภาพครอบคลุมพื้นที่ทั้งหมด */
+    filter: brightness(0.9); /* ลดความสว่างเล็กน้อย */
+    transition: transform 2.5s ease, filter 2.5s ease;
+}
+
+.custom-carousel-image:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+    filter: brightness(1); /* เพิ่มความสว่าง */
+}
+
+/* สไตล์ข้อความ Caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* พื้นหลังโปร่งใสสีดำ */
+    color: white; /* ข้อความสีขาว */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%; /* จำกัดความกว้างของข้อความ */
+    margin: 0 auto; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* ปรับแต่งปุ่มควบคุม */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* เปลี่ยนสีไอคอนเป็นสีขาว */
+}
+
