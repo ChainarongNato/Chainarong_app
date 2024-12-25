@@ -21,6 +21,7 @@ function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white menu-item" href="#">จองห้อง</a>
+                               
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white menu-item" href="#">เกี่ยวกับโรงแรม</a>
@@ -33,7 +34,7 @@ function Navbar() {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a className="nav-link text-white login-link" href="#">ลงชื่อเข้าใช้</a>
-                            </li>
+                            </li>   
                         </ul>
                     </div>
                 </div>

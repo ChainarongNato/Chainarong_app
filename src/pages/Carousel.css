@@ -1,16 +1,17 @@
 .carousel-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    gap: 20px; /* เพิ่มระยะห่างระหว่างข้อความกับรูปภาพ */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* ข้อความทางซ้าย */
 .carousel-text {
-    padding: 20px;
-    text-align: left;
+    flex: 1; /* กำหนดให้พื้นที่ข้อความยืดหยุ่น */
+    text-align: left; /* จัดข้อความชิดซ้าย */
 }
-
 .carousel-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -50,6 +51,12 @@
 .carousel-image:hover {
     transform: scale(1.05);
 }
+.carousel-image-container {
+    flex: 1; /* กำหนดให้พื้นที่รูปยืดหยุ่น */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ปรับให้ข้อความและภาพจัดเรียงในหน้าจอเล็ก */
 @media (max-width: 768px) {
@@ -60,7 +67,7 @@
     .carousel-text,
     .carousel-inner {
         text-align: center;
-        width: 100%;
+        width: 80%;
     }
 }
 

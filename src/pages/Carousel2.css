@@ -1,7 +1,7 @@
 /* สไตล์สำหรับการจัดระยะห่างรอบ Carousel */
 .carousel-container {
     margin: 20px auto; /* เพิ่มระยะห่างด้านบน/ล่างและตรงกลางหน้าจอ */
-    padding: 10px; /* เพิ่มระยะห่างภายใน */
+    padding: 30px; /* เพิ่มระยะห่างภายใน */
     max-width: 90%; /* จำกัดความกว้างไม่ให้เต็มจอ */
     border-radius: 15px; /* มุมมน */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเพื่อความโดดเด่น */
@@ -37,4 +37,6 @@
 .carousel-control-next-icon {
     filter: invert(1); /* เปลี่ยนสีไอคอนเป็นสีขาว */
 }
-
+.carousel-item{
+    margin: 60px;  
+}

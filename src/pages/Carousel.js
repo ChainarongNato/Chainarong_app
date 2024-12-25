@@ -4,7 +4,7 @@ import "./Carousel.css"; // เพิ่มไฟล์ CSS สำหรับ�
 
 function Carousel() {
     return (
-        <div className="row carousel-container">
+        <div className="carousel-container">
             <div className="col-lg-6 carousel-text">
                 <div>
                     <h5 className="carousel-title ">ยินดีต้อนรับสู่</h5>
@@ -12,8 +12,7 @@ function Carousel() {
                     <p className="carousel-description">
                         ข้อให้ลูกค้าทุกท่านมีความสูขกับการพักผ่อน
                     </p>
-                    
-                    <button className="btn btn-primary carousel-btn">สำรวจเพิ่มเติม</button>
+
                 </div>
                 
             </div>
@@ -42,7 +41,7 @@ function Carousel() {
                         ></button>
                     </div>
                     <div className="carousel-inner">
-                    <div className="carousel-item active" data-bs-interval="10000">
+                    <div className="carousel-item active " data-bs-interval="10000">
                             <img src="./img/00.jpg" className="d-block w-100 carousel-image" alt="Slide 1" />
                         </div>
                         <div className="carousel-item" data-bs-interval="2000">
